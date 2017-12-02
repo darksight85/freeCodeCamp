@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+
+  <title>The Simpsons Random Quote Machine</title>
+</head>
+
+<body>
+  <div class="container">
+      <p id="title" class="text-center">The Simpsons Quote</p>
+    <div class="row">
+      <div id="quoteBox">
+        <div class="quoteText">
+          <img id="img" class="float-right" src="" alt="">
+          <p id="quote"></p>
+          <p id="character" class="blockquote-footer"></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="buttonContent">
+        <button id="newQuote" class="btn btn-outline-dark boutton">New Quote</button>
+        <button id="newTwitter" class="btn btn-outline-dark boutton">Twitter</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var rdmQuote = "",
+          charQuote = "";
+      function getQuote() {
+
+        $.ajax({
+          url: 'https://thesimpsonsquoteapi.glitch.me/quotes',
+          data: {
+            format: 'json'
+          },
+          cache: false,
+          success: function(data) {
+            var response = data.shift();
+            rdmQuote = response.quote;
+            charQuote = response.character;
+            console.log(response.quote);
+            $("#quote").html(response.quote);
+            $("#img").attr("src", response.image)
+            $("#character").html(response.character);
+
+          }
+        });
+      }
+      getQuote();
+
+      $("#newQuote").on("click", function(event) {
+        event.preventDefault();
+        getQuote();
+      });
+
+      $("#newTwitter").on("click", function() {
+        window.open("http://twitter.com/home/?status=\"" + rdmQuote + "\" - " + charQuote);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

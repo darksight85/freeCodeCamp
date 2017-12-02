@@ -1,0 +1,57 @@
+body {
+  background-color: #eebd00 !important;
+}
+
+#title {
+  margin-top: 30px;
+  font-size: 4em;
+}
+
+#quoteBox {
+  margin-top: 15px;
+  margin-bottom: 3vh;
+  overflow: hidden;
+  max-height: 35vh;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  border-style: dashed;
+}
+
+#quote {
+ font-size: 1.6em;
+}
+
+#character {
+  padding-bottom: 10px !important;
+}
+
+#img {
+  height:100% !important;
+}
+
+.blockquote-footer{
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 1em !important;
+}
+
+.boutton {
+  margin: 10px;
+}
+
+.buttonContent {
+  display: inline-block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 780px) {
+  #quoteBox {
+    height: auto;
+  }
+
+  #img {
+    display: none;
+  }
+}
