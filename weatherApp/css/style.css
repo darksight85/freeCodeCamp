@@ -1,0 +1,10 @@
+body {
+  background-color: #333333;
+  color:#ffffff;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+#top-100 {
+position: relative;
+top: 150px;
+}
