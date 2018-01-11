@@ -2,9 +2,17 @@ body {
   background-color: #333333;
   color:#ffffff;
   font-family: 'Archivo Black', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #top-100 {
 position: relative;
 top: 150px;
+}
+
+p, h1 {
+  text-shadow: #000 1px 0 10px;
 }
