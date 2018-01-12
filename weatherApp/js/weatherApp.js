@@ -63,8 +63,20 @@ function getWeater(locationUrl) {
         case "Rain":
             $("body").css('background-image', 'url("https://static.pexels.com/photos/459451/pexels-photo-459451.jpeg")');
           break;
-        // case "Clear":
-        //     $("body").css('background-image', 'url("https://static.pexels.com/photos/518415/pexels-photo-518415.jpeg")');
+        case "Mist":
+            $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+          break;
+        // case "Mist":
+        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        //   break;
+        // case "Mist":
+        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        //   break;
+        // case "Mist":
+        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        //   break;
+        // case "Mist":
+        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
         //   break;
 
         default:
