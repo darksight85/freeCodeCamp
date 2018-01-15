@@ -66,17 +66,19 @@ function getWeater(locationUrl) {
         case "Mist":
             $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
           break;
-        // case "Mist":
-        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+
+          // Extra SPACE for new background
+        // case "":
+        //     $("body").css('background-image', 'url("")');
         //   break;
-        // case "Mist":
-        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        // case "":
+        //     $("body").css('background-image', 'url("")');
         //   break;
-        // case "Mist":
-        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        // case "":
+        //     $("body").css('background-image', 'url("")');
         //   break;
-        // case "Mist":
-        //     $("body").css('background-image', 'url("https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")');
+        // case "":
+        //     $("body").css('background-image', 'url("")');
         //   break;
 
         default:
